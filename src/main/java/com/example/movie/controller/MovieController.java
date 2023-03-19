@@ -45,7 +45,7 @@ public class MovieController {
     }
 
     @DeleteMapping("/movies/{movieId}")
-    public void deleteById(@PathVariable("movieId") int movieId) {
-        movieJpaService.deleteById(movieId);
+    public void deleteMovie(@PathVariable("movieId") int movieId) {
+        movieJpaService.deleteMovie(movieId);
     }
 }
