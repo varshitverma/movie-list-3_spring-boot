@@ -75,7 +75,7 @@ public class MovieJpaService implements MovieRepository {
     }
     
     @Override
-    public void deleteMapping(int movieId) {
+    public void deleteMovie(int movieId) {
         try {
             movieJpaRepository.deleteById(movieId);
         } catch (Exception e) {
